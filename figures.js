@@ -6,8 +6,8 @@ function areaCuadrado (lado) {
     return lado * lado;
 }
 
-function perimetroTriangulo (lado1, lado2, lado3) {
-    return lado1 + lado2 + lado3;
+function perimetroTriangulo (lado1, lado2, base) {
+    return lado1 + lado2 + base;
 }
 
 function areaTriangulo (base, altura) {
@@ -22,5 +22,35 @@ function areaCirculo (radio) {
     return Math.PI * radio ^ 2;
 }
 
-const lado = document.getElementById("InputCuadrado").value;
-console.log(lado);
+function calcularCuadrado () {
+    const element = document.getElementById("InputCuadrado");
+    const value = parseInt(element.value);
+
+    let perimetro = perimetroCuadrado(value);
+    let area = areaCuadrado(value);
+
+    document.getElementById("ResultadoCuadrado").innerHTML = `Resultado: Perímetro = ${perimetro}cm - Área = ${area}cm^2`;
+}
+
+function calcularTriangulo () {
+    const element = document.getElementById("InputTriangulo");
+    const value = parseInt(element.value);
+
+    console.log(element);
+
+    let perimetro = perimetroCuadrado(value);
+    let area = areaCuadrado(value);
+
+    document.getElementById("ResultadoCuadrado").innerHTML = `Resultado: Perímetro = ${perimetro}cm - Área = ${area}cm^2`;
+}
+
+function calcularCirculo () {
+    const element = document.getElementById("InputCirculo");
+    const value = parseInt(element.value);
+
+    console.log(element);
+    let perimetro = perimetroCuadrado(value);
+    let area = areaCuadrado(value);
+
+    document.getElementById("ResultadoCuadrado").innerHTML = `Resultado: Perímetro = ${perimetro}cm - Área = ${area}cm^2`;
+}
