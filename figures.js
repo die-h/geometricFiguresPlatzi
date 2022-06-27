@@ -31,7 +31,7 @@ function calcularCuadrado () {
     let perimetro = perimetroCuadrado(value);
     let area = areaCuadrado(value);
 
-    document.getElementById("ResultadoCuadrado").innerHTML = `Resultado: Perímetro = ${perimetro}cm - Área = ${area}cm^2`;
+    document.getElementById("ResultadoCuadrado").innerText = `Resultado: Perímetro = ${perimetro}cm - Área = ${area}cm^2`;
 }
 
 function calcularTriangulo () {
@@ -45,7 +45,7 @@ function calcularTriangulo () {
     let perimetro = perimetroTriangulo(lado1, lado2, lado3);
     let area = areaTriangulo(lado1, lado2, lado3);
 
-    document.getElementById("ResultadoTriangulo").innerHTML = `Resultado: Perímetro = ${perimetro}cm - Área = ${area}cm^2`;
+    document.getElementById("ResultadoTriangulo").innerText = `Resultado: Perímetro = ${perimetro}cm - Área = ${area}cm^2`;
 }
 
 function calcularCirculo () {
@@ -55,5 +55,5 @@ function calcularCirculo () {
     let perimetro = perimetroCirculo(value);
     let area = areaCirculo(value);
 
-    document.getElementById("ResultadoCirculo").innerHTML = `Resultado: Perímetro = ${perimetro}cm - Área = ${area}cm^2`;
+    document.getElementById("ResultadoCirculo").innerText = `Resultado: Perímetro = ${perimetro}cm - Área = ${area}cm^2`;
 }
